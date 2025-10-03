@@ -1,0 +1,21 @@
+0, 50, CPU Execution
+50, 1, switch to kernel mode
+51, 10, context saved
+61, 1, find vector 7 in memory position 14
+62, 1, obtrain ISR address
+63, 66, call device driver
+129, 189, execute interrupt
+318, 10, context restored
+328, 1, IRET
+329, 170, end of I/O 7
+329, 100, CPU Execution
+429, 1, switch to kernel mode
+430, 10, context saved
+440, 1, find vector 12 in memory position 24
+441, 1, obtrain ISR address
+442, 130, call device driver
+572, 383, execute interrupt
+955, 10, context restored
+965, 1, IRET
+966, 170, end of I/O 12
+966, 20, CPU Execution
