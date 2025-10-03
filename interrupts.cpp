@@ -74,7 +74,18 @@ int main(int argc, char** argv) {
                 {
                     execution += (std::to_string(time) + ", 1, IRET\n");
                     time +=1;
-                    execution += (std::to_string(time) + ", 170, end of I/O "+ tokens[1] +"\n");
+                                    std::ifstream device_table(argv[3]);
+                    std::string line;
+                    int current_line = 1;   
+                    while (std::getline(device_table, line)) {
+                        if (current_line == std::stoi(tokens[1])) {
+                            break;
+                        }
+                    current_line++;
+                    }
+                    device_table.close();
+                    execution += (std::to_string(time) + "," + line + ", end of I/O "+ tokens[1] +"\n");
+                    time += std::stoi(line);
 
                 }
             }
