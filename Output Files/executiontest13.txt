@@ -1,0 +1,80 @@
+0, 19, CPU Execution
+19, 1, switch to kernel mode
+20, 10, context saved
+30, 1, find vector 11 in memory position 22
+31, 1, obtrain ISR address
+32, 141, call device driver
+173, 413, execute interrupt
+586, 10, context restored
+596, 1, IRET
+597,564, end of I/O 11
+1161, 201, CPU Execution
+1362, 1, switch to kernel mode
+1363, 10, context saved
+1373, 1, find vector 12 in memory position 24
+1374, 1, obtrain ISR address
+1375, 130, call device driver
+1505, 383, execute interrupt
+1888, 10, context restored
+1898, 1, IRET
+1899,523 , end of I/O 12
+2422, 60, CPU Execution
+2482, 1, switch to kernel mode
+2483, 10, context saved
+2493, 1, find vector 1 in memory position 2
+2494, 1, obtrain ISR address
+2495, 27, call device driver
+2522, 73, execute interrupt
+2595, 10, context restored
+2605, 1, IRET
+2606,110, end of I/O 1
+2716, 22, CPU Execution
+2738, 1, switch to kernel mode
+2739, 10, context saved
+2749, 1, find vector 5 in memory position 10
+2750, 1, obtrain ISR address
+2751, 62, call device driver
+2813, 178, execute interrupt
+2991, 10, context restored
+3001, 1, IRET
+3002,250, end of I/O 5
+3252, 11, CPU Execution
+3263, 1, switch to kernel mode
+3264, 10, context saved
+3274, 1, find vector 2 in memory position 4
+3275, 1, obtrain ISR address
+3276, 25, call device driver
+3301, 65, execute interrupt
+3366, 10, context restored
+3376, 1, IRET
+3377,100, end of I/O 2
+3477, 120, CPU Execution
+3597, 1, switch to kernel mode
+3598, 10, context saved
+3608, 1, find vector 13 in memory position 26
+3609, 1, obtrain ISR address
+3610, 36, call device driver
+3646, 99, execute interrupt
+3745, 10, context restored
+3755, 1, IRET
+3756,145, end of I/O 13
+3901, 56, CPU Execution
+3957, 1, switch to kernel mode
+3958, 10, context saved
+3968, 1, find vector 3 in memory position 6
+3969, 1, obtrain ISR address
+3970, 37, call device driver
+4007, 103, execute interrupt
+4110, 10, context restored
+4120, 1, IRET
+4121,150, end of I/O 3
+4271, 27, CPU Execution
+4298, 1, switch to kernel mode
+4299, 10, context saved
+4309, 1, find vector 16 in memory position 32
+4310, 1, obtrain ISR address
+4311, 17, call device driver
+4328, 41, execute interrupt
+4369, 10, context restored
+4379, 1, IRET
+4380,68, end of I/O 16
