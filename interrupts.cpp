@@ -40,6 +40,7 @@ int main(int argc, char** argv) {
         {
             if (tokens[0] == "SYSCALL")
             {
+                /*I don't know how we can make every execution step here 40ms*/
                 execution += (std::to_string(time) + ", 1, switch to kernel mode\n");
                 time += 1;
                 execution += (std::to_string(time) + ", 10, context saved\n");
@@ -48,6 +49,10 @@ int main(int argc, char** argv) {
                 time += 1;
                 execution += (std::to_string(time) + ", 1, obtrain ISR address\n");
                 time +=1;
+                /*I don't know how we can make every execution step here 40ms, as the time the devices take, listed in the device table, are not all multiples of 40*/
+                /*I would love to hear about how this can be done, however I am implimenting it like this for now, despite the fact I know it may be wrong.*/
+                /*The insturctions for this assignment are very unclear, so I applogize in advance if this is wrong, I am simply trying to understand the instructions the best I can.*/
+
                 std::ifstream device_table(argv[3]);
                 std::string line;
                 int current_line = 1;   
